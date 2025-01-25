@@ -5,10 +5,6 @@
 
 An AI-powered web application that analyzes text sentiment and emotions in real-time using Hugging Face's Transformers.
 
-**Live Demo**: [https://your-app-name.herokuapp.com](https://your-app-name.herokuapp.com)
-
-![Screenshot](./screenshot.png)
-
 ## Features ✨
 - Real-time text analysis as you type
 - 28 emotional tones detection
@@ -25,7 +21,7 @@ An AI-powered web application that analyzes text sentiment and emotions in real-
 ## Installation 💻
 ```bash
 # Clone repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/ahmad123m/tone-detector.git
 
 # Install dependencies
 pip install -r requirements.txt
