@@ -43,6 +43,7 @@ tone-detector/
 ├── Procfile
 ├── static/
 │   └── style.css
+    ----app.js
 └── templates/
     └── index.html
 ```
