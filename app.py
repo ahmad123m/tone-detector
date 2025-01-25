@@ -1,8 +1,13 @@
 from flask import Flask, render_template, request, jsonify
 from transformers import pipeline
-import torch
+import os
+import logging
 
 app = Flask(__name__)
+
+# Configure logging for production
+logging.basicConfig(level=logging.ERROR)
+logger = logging.getLogger(__name__)
 
 # Initialize text analyzer with proper config
 text_analyzer = pipeline(
@@ -70,7 +75,9 @@ def analyze():
         return jsonify({'analysis': sorted(processed, key=lambda x: x['score'], reverse=True)})
     
     except Exception as e:
+        logger.error(f"Error occurred during analysis: {e}")
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Use dynamic host and port for production
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
