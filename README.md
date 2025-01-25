@@ -42,8 +42,9 @@ tone-detector/
 ├── requirements.txt
 ├── Procfile
 ├── static/
-│   └── style.css
-    ----app.js
+│   ├── style.css
+│   ├── app.js
+│   └── favicon.ico
 └── templates/
     └── index.html
 ```
