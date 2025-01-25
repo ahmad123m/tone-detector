@@ -16,7 +16,6 @@ An AI-powered web application that analyzes text sentiment and emotions in real-
 - **Backend**: Python/Flask
 - **AI Model**: `joeddav/distilbert-base-uncased-go-emotions-student`
 - **Frontend**: HTML5, CSS3, JavaScript
-- **Deployment**: Heroku
 
 ## Installation 💻
 ```bash
