@@ -1,14 +1,13 @@
 # requirements.txt
 Flask==3.0.2
-Werkzeug==3.0.1
+Werkzeug==3.0.1  # Downgraded for compatibility
+gunicorn==21.2.0  # Required for Render
 transformers==4.40.1
 torch==2.2.1
 numpy==1.26.4
-pillow==10.3.0
-gunicorn==21.2.0
 huggingface-hub==0.27.1
 requests==2.32.3
 tqdm==4.66.2
 python-dateutil==2.9.0.post0
-markupsafe==2.1.5
-jinja2==3.1.4
+Jinja2==3.1.5
+MarkupSafe==2.1.5  # Explicit version for Jinja2
